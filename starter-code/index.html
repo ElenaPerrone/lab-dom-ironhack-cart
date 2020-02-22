@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>IronCart</title>
+    <script src="./js/index.js"></script> 
   </head>
   <body>
     <h1>IronCart</h1>
@@ -18,8 +19,8 @@
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
-        <tr class="product">
+      <tbody id='prodList'>
+        <tr class="product" >
           <td class="name">
             <span>IronBubble-head</span>
           </td>
@@ -38,14 +39,33 @@
             <button class="btn btn-delete">Delete</button>
           </td>
         </tr>
+        <tr class="product">
+          <td class="name">
+            <span>IronHack Tshirt</span>
+          </td>
+
+          <td class="pu">$<span>15.00</span></td>
+
+          <td class="qty">
+            <label>
+              <input type="number" value="0" min="0" />
+            </label>
+          </td>
+
+          <td class="subtot">$<span>0</span></td>
+
+          <td class="rm">
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
       </tbody>
-      <!-- <tfoot>
+      <tfoot>
       <tr class="new">
         <td>
-          <input type="text"/>
+          <input type="text" class='newProd'/>
         </td>
         <td>
-          <input type="number" min="0"/>
+          <input type="number" min="0" class='newPrice'/>
         </td>
         <td></td>
         <td></td>
@@ -53,7 +73,7 @@
           <button id="create" class="btn">Create</button>
         </td>
       </tr>
-    </tfoot> -->
+    </tfoot>
     </table>
 
     <p class="cta">
